@@ -1,6 +1,6 @@
 {
   "name": "cypress-odoo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Odoo Framework E2E Testing using Cypress",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "cy_run_chrome": "cypress run --browser chrome",
     "cy_run_record": "cypress run --record",
     "cy_run_chrome_record": "cypress run --browser chrome --record"
-   },
-   "repository": {
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/borni-dhifi/odoo-cypress.git"
   },
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/borni-dhifi/odoo-cypress/blob/master/README.md",
   "devDependencies": {
-    "cypress": "1.4.0"
+    "cypress": "^4.5.0"
   }
 }
