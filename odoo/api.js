@@ -15,7 +15,8 @@ EX: cy.Login()
 Cypress.Commands.add('Login', () => {
     cy.visit(odoo_url+'/web/database/selector');
     cy.url().should('contain', '/web/database/selector');
-    cy.get('.o_database_list').contains(database).should('have.class', 'list-group-item').click();
+    cy.debug();
+    cy.get('.list-group-item').should('have.class', 'list-group-item').contains(database).click();
     cy.Waiting(1000);
     cy.url().should('include', '/web/login');
       cy.get('form').within(function(){
